@@ -1,0 +1,24 @@
+{
+  "name": "psk",
+  "version": "1.0.0",
+  "description": "This is the starter template for the labs of the **Programming Styles** course at USI.",
+  "main": "test.js",
+  "dependencies": {
+    "shelljs": "^0.8.4",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuCEresearchlab/programming-styles-starter.git"
+  },
+  "author": "LuCE Reseach Lab - USI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuCEresearchlab/programming-styles-starter/issues"
+  },
+  "homepage": "https://github.com/LuCEresearchlab/programming-styles-starter#readme"
+}
