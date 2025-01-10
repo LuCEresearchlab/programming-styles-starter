@@ -1,4 +1,3 @@
-const { exec } = require('child_process');
 const os = require('os');
 const shell = require('shelljs');
 const argv = require('yargs')
@@ -12,7 +11,7 @@ const argv = require('yargs')
      'lang': {
                alias: 'l',
                describe: 'Language of program to test',
-               choices: ['java', 'javascript', 'other'],
+               choices: ['java', 'javascript', 'haskell', 'other'],
                default: 'java'
              },
      'main': {
@@ -26,6 +25,10 @@ const argv = require('yargs')
 if (argv.lang == 'java') {
   console.log('==> Compiling Java classes');
   shell.exec('javac *.java');
+}
+if (argv.lang == 'haskell') {
+  console.log('==> Compiling Haskell files');
+  shell.exec('ghc *.hs');
 }
 
 const commandName = {'java': 'java', 'javascript': 'node', 'other': ''};
